@@ -3,11 +3,10 @@
 namespace Achse\TagInput;
 
 use JsonSerializable;
-use Nette\Object;
 
 
 
-class DataSourceDescriptor extends Object implements JsonSerializable
+class DataSourceDescriptor implements JsonSerializable
 {
 
 	const DEFAULT_LABEL_PROPERTY = 'label';

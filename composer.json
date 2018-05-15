@@ -15,8 +15,8 @@
 		}
 	],
 	"require": {
-		"nette/forms": "~2.4.0",
-		"nette/utils": "~2.4.0",
+		"nette/forms": "^2.4",
+		"nette/utils": "^2.4",
 		"php": ">=5.6"
 	},
 	"require-dev": {
@@ -26,5 +26,8 @@
 		"psr-4": {
 			"Achse\\TagInput\\": "src/"
 		}
+	},
+	"scripts": {
+		"tests": "./vendor/bin/tester -s -j 32 -c ./tests/php.ini ./tests --coverage coverage.xml --coverage-src src"
 	}
 }
